@@ -25,20 +25,20 @@ tmp=/data/adb/jancox-tool
 [ -d $tmp ] && del $tmp
 mkdir -p $tmp
 #Check new version
-if [ $internet = online ]; then
-rm -rf $tmp/module.prop
-rm -rf $tmp/changelog
-wget -O $tmp/module.prop https://raw.githubusercontent.com/Wahyu6070/Jancox-tool-android/master/module.prop >&2
-sleep 1s
-   if [ $(upinfo versionCode) -gt $MODULECODE ]; then
-   ui_print "----> New Version Anvailable <------"
-   ui_print "Version = $(upinfo version)"
-   ui_print "Date    = $(upinfo date)"
-   wget -O $tmp/changelog https://raw.githubusercontent.com/Wahyu6070/Jancox-tool-android/master/changelog >&2
-   cat $tmp/changelog
-   ui_print " "
-   fi
-fi
+#if [ $internet = online ]; then
+#rm -rf $tmp/module.prop
+#rm -rf $tmp/changelog
+#wget -O $tmp/module.prop https://raw.githubusercontent.com/Wahyu6070/Jancox-tool-android/master/module.prop >&2
+#sleep 1s
+#   if [ $(upinfo versionCode) -gt $MODULECODE ]; then
+#   ui_print "----> New Version Anvailable <------"
+#   ui_print "Version = $(upinfo version)"
+#   ui_print "Date    = $(upinfo date)"
+#   wget -O $tmp/changelog https://raw.githubusercontent.com/Wahyu6070/Jancox-tool-android/master/changelog >&2
+#   cat $tmp/changelog
+#   ui_print " "
+#   fi
+#fi
 ui_print "- Installing python"
 tar -xf $MODPATH/bin/python.tar.xz -C $MODPATH/system/lib
 
