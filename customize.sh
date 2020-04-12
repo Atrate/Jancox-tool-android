@@ -20,10 +20,10 @@ ui_print "| Date Install    : $(date)"
 ui_print "|___________________________________"
 ui_print " "
 
-upinfo() { grep_prop $MODPATH/module.prop| cut -d "=" -f 2; }
-tmp=/data/adb/jancox-tool
-[ -d $tmp ] && del $tmp
-mkdir -p $tmp
+#upinfo() { grep_prop $MODPATH/module.prop| cut -d "=" -f 2; }
+#tmp=/data/adb/jancox-tool
+#[ -d $tmp ] && del $tmp
+#mkdir -p $tmp
 #Check new version
 #if [ $internet = online ]; then
 #rm -rf $tmp/module.prop
