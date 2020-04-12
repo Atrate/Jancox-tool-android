@@ -1,4 +1,4 @@
-# jancox-tool mobile repack ROMs
+# jancox-tool mobile Unpack/repack ROMs
 *Jancox tool is a tool unpack/repack ROMs support android,linux,windows
 
 ## Install python 3 in termux (Recomended)
